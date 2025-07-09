@@ -25,6 +25,7 @@ import { Badge } from "@/components/ui/badge"
 export default function Portfolio() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const { scrollYProgress } = useScroll()
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
 
   useEffect(() => {
